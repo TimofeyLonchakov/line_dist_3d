@@ -83,7 +83,7 @@ double Segment3D::computeDistance(const Segment3D& seg) const
 		}
 		if (0.0 == distancesSq[index])
 		{
-			return 0.0;
+			return fabs(planeDistance);
 		}
 		if ((0.0 > distanceSq) ||
 			(distancesSq[index] < distanceSq))
